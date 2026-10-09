@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Future of Software</title>
+  <meta name="description" content="A neon 3D platformer through the two career paths of modern software engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="css3d"></div>
+
+  <div id="hud" class="idle">
+    <div id="progress">
+      <div id="p-design" class="path design"><span class="mark">◇</span> Design path</div>
+      <div id="p-systems" class="path systems"><span class="mark">◇</span> Systems path</div>
+    </div>
+    <div id="topic" class="hidden">
+      <div id="topic-label"></div>
+      <div id="topic-blurb"></div>
+    </div>
+    <div id="banner" class="hidden"></div>
+    <div id="help">WASD / arrows move · Space jump · drag to look · scroll to zoom · Q/E turn · R restart</div>
+    <button id="mute-btn">Sound on (M)</button>
+  </div>
+
+  <div id="fade"></div>
+
+  <div id="start">
+    <div class="card">
+      <h1>The Future of Software</h1>
+      <p>Two paths lead out from the center: one for <span class="design">design engineers</span>, one for <span class="systems">system-oriented engineers</span>. Jump through every discipline to reach the end of each one.</p>
+      <p class="small">Fall into the void and you float back to the start. The talk plays on the big screen the whole time.</p>
+      <button id="start-btn">Click to start</button>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
